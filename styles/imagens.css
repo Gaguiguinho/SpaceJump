@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Pixelify+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+
+.alien {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    animation: alien-animation 2s infinite linear;
+}
+
+@keyframes alien-animation {
+    from {
+      right: -80px;
+    }
+
+    to {
+      right: 100%;
+    }
+}
+
+.astro {
+    width: 130px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.jump-astro {
+    animation: jump-astro 500ms ease-out;
+}
+
+@keyframes jump-astro {
+
+    0% {
+      bottom: 0;
+    }
+
+    40% {
+       bottom: 160px; 
+    }
+    
+    50% {
+      bottom: 160px;
+    }
+    
+    60% {
+        bottom: 160px;
+    }
+
+    100% {
+      bottom: 0;   
+    }
+}
+
+.start-screen {
+  background-image: url(/assets/star-pixel-bkg.avif);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid #333;
+}
+ 
+
+.start-screen img {
+ 
+  width: 50%;
+  height: 500px;
+}
+
+/* .startClick {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 32px;
+  color: aliceblue;
+
+} */
+
+.startClick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 32px;
+  color: aliceblue;
+  white-space: nowrap; 
+  overflow: hidden; 
+  border-right: 2px solid transparent; 
+  width: 0; 
+  animation: typing-animation 3s steps(30, end) forwards; /* Define a animação */
+}
+
+@keyframes typing-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+
+
+
+.end {
+  height: 100vh;
+  width: 100%;
+  height: 500px;
+  display: none;
+  background-image: url(/assets/sky-2d.gif);
+ 
+}
+
+.endClick {
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 25px;
+  color: aliceblue;
+  display: none;
+  flex-direction: column;
+}
+
+.endLink {
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 16px;
+  color: aliceblue;
+  display: none;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: px solid transparent;
+  width: 0;
+  animation: typing-animation 3s steps(60, end) infinite; /* Define a animação */
+}
+
+@keyframes typing-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.lançamento {
+  height: 100vh;
+  width: 100%;
+  height: 500px;
+  display: block;
+  background-image: url(/assets/sky-2d.gif);
+ font-size: 32px;
+}
+
+
+
+.sky-intro-text {
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 25px;
+  color: aliceblue;
+  display: block;
+  cursor: pointer;
+}
+
+.lançamento-2 {
+  height: 100vh;
+  width: 100%;
+  height: 500px;
+  display: block;
+  background-image: url(/assets/sky-2d\ -\ Copia.gif);
+  display: flex;
+  cursor: pointer;
+}
+
+.sky-intro-text-2 {
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 25px;
+  color: aliceblue;
+  display: block;
+}
+  
+
+
+
